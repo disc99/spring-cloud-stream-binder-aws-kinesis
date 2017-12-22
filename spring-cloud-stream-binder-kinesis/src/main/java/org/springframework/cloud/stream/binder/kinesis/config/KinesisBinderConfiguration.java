@@ -34,6 +34,7 @@ import org.springframework.cloud.stream.binder.kinesis.provisioning.KinesisStrea
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.integration.aws.metadata.DynamoDbMetaDataStore;
+import org.springframework.integration.codec.Codec;
 import org.springframework.integration.metadata.MetadataStore;
 
 /**
@@ -69,10 +70,11 @@ public class KinesisBinderConfiguration {
 
 	@Bean
 	KinesisMessageChannelBinder kinesisMessageChannelBinder(AmazonKinesisAsync amazonKinesis,
-			KinesisStreamProvisioner provisioningProvider, MetadataStore kinesisCheckpointStore) {
+			KinesisStreamProvisioner provisioningProvider, Codec codec, MetadataStore kinesisCheckpointStore) {
 
 		KinesisMessageChannelBinder kinesisMessageChannelBinder = new KinesisMessageChannelBinder(amazonKinesis,
 				this.configurationProperties, provisioningProvider);
+		kinesisMessageChannelBinder.setCodec(codec);
 		kinesisMessageChannelBinder.setCheckpointStore(kinesisCheckpointStore);
 
 		return kinesisMessageChannelBinder;
