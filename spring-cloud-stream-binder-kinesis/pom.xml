@@ -4,21 +4,21 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-stream-binder-kinesis-parent</artifactId>
-		<version>0.9.0.RELEASE</version>
+		<groupId>io.disc99</groupId>
+		<artifactId>spring-cloud-stream-binder-kinesis-legacy-parent</artifactId>
+		<version>0.9.1.RELEASE</version>
 	</parent>
 
-	<artifactId>spring-cloud-stream-binder-kinesis</artifactId>
+	<artifactId>spring-cloud-stream-binder-kinesis-legacy</artifactId>
 	<packaging>jar</packaging>
-	<name>spring-cloud-stream-binder-kinesis</name>
+	<name>spring-cloud-stream-binder-kinesis-legacy</name>
 	<description>AWS Kinesis Binder Implementation</description>
 
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-stream-binder-kinesis-core</artifactId>
+			<groupId>io.disc99</groupId>
+			<artifactId>spring-cloud-stream-binder-kinesis-core-legacy</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>

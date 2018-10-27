@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-stream-binder-kinesis-parent</artifactId>
-		<version>0.9.0.RELEASE</version>
+		<groupId>io.disc99</groupId>
+		<artifactId>spring-cloud-stream-binder-kinesis-legacy-parent</artifactId>
+		<version>0.9.1.RELEASE</version>
 	</parent>
 
-	<artifactId>spring-cloud-stream-binder-kinesis-core</artifactId>
+	<artifactId>spring-cloud-stream-binder-kinesis-core-legacy</artifactId>
 	<description>Spring Cloud Stream Kinesis Binder Core</description>
 
 	<dependencies>

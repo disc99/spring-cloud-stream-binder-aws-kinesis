@@ -10,8 +10,9 @@
 		<relativePath/>
 	</parent>
 
-	<artifactId>spring-cloud-stream-binder-kinesis-parent</artifactId>
-	<version>0.9.0.RELEASE</version>
+	<groupId>io.disc99</groupId>
+	<artifactId>spring-cloud-stream-binder-kinesis-legacy-parent</artifactId>
+	<version>0.9.1.RELEASE</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -23,20 +24,19 @@
 	<modules>
 		<module>spring-cloud-stream-binder-kinesis-core</module>
 		<module>spring-cloud-stream-binder-kinesis</module>
-		<module>spring-cloud-stream-binder-kinesis-docs</module>
 		<module>spring-cloud-starter-stream-kinesis</module>
 	</modules>
 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-stream-binder-kinesis</artifactId>
+				<groupId>io.disc99</groupId>
+				<artifactId>spring-cloud-stream-binder-kinesis-legacy</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-stream-binder-kinesis-core</artifactId>
+				<groupId>io.disc99</groupId>
+				<artifactId>spring-cloud-stream-binder-kinesis-core-legacy</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
