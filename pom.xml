@@ -12,13 +12,14 @@
 
 	<groupId>io.disc99</groupId>
 	<artifactId>spring-cloud-stream-binder-kinesis-legacy-parent</artifactId>
-	<version>0.9.1.RELEASE</version>
+	<version>0.9.3.RELEASE</version>
 	<packaging>pom</packaging>
 
 	<properties>
 		<spring-cloud-stream.version>1.3.0.RELEASE</spring-cloud-stream.version>
 		<spring-cloud-aws.version>1.2.2.RELEASE</spring-cloud-aws.version>
 		<spring-integration-aws-version>1.1.0.RELEASE</spring-integration-aws-version>
+		<spring-integration-aws-core>4.3.12.RELEASE</spring-integration-aws-core>
 	</properties>
 
 	<modules>
@@ -49,6 +50,11 @@
 				<groupId>org.springframework.integration</groupId>
 				<artifactId>spring-integration-aws</artifactId>
 				<version>${spring-integration-aws-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.integration</groupId>
+				<artifactId>spring-integration-core</artifactId>
+				<version>${spring-integration-core-version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
