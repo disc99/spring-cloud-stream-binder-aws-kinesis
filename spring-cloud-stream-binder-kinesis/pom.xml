@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>io.disc99</groupId>
 		<artifactId>spring-cloud-stream-binder-kinesis-legacy-parent</artifactId>
-		<version>0.9.1.RELEASE</version>
+		<version>0.9.3.RELEASE</version>
 	</parent>
 
 	<artifactId>spring-cloud-stream-binder-kinesis-legacy</artifactId>
